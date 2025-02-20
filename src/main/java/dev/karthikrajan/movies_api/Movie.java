@@ -9,6 +9,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.DocumentReference;
 
+import java.util.Collections;
 import java.util.List;
 
 @Document(collection = "movies")
@@ -36,7 +37,11 @@ public class Movie {
     private List<String> backdrops;
 
     @DocumentReference
-    @JsonProperty("reviewIds")
-    private List<Review> reviewIds;
+    @JsonProperty("reviews")
+    private List<Review> reviews;
+
+    private void getReviews(Review review){
+        this.reviews= Collections.singletonList(review);
+    }
 
 }
