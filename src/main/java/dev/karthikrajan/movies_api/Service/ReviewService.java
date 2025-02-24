@@ -1,8 +1,8 @@
 package dev.karthikrajan.movies_api.Service;
 
-import dev.karthikrajan.movies_api.Movie;
+import dev.karthikrajan.movies_api.DAO.Movie;
 import dev.karthikrajan.movies_api.Repository.ReviewRepository;
-import dev.karthikrajan.movies_api.Review;
+import dev.karthikrajan.movies_api.DAO.Review;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;

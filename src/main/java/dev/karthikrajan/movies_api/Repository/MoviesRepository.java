@@ -1,6 +1,6 @@
 package dev.karthikrajan.movies_api.Repository;
 
-import dev.karthikrajan.movies_api.Movie;
+import dev.karthikrajan.movies_api.DAO.Movie;
 import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;

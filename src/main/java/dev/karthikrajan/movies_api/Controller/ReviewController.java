@@ -1,7 +1,6 @@
 package dev.karthikrajan.movies_api.Controller;
 
-import dev.karthikrajan.movies_api.MovieNotFoundException;
-import dev.karthikrajan.movies_api.Review;
+import dev.karthikrajan.movies_api.DAO.Review;
 import dev.karthikrajan.movies_api.Service.ReviewService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

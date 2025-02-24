@@ -1,5 +1,5 @@
 package dev.karthikrajan.movies_api.Service;
-import dev.karthikrajan.movies_api.Movie;
+import dev.karthikrajan.movies_api.DAO.Movie;
 import dev.karthikrajan.movies_api.Repository.MoviesRepository;
 import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;

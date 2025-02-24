@@ -1,4 +1,4 @@
-package dev.karthikrajan.movies_api;
+package dev.karthikrajan.movies_api.DAO;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

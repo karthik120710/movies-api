@@ -1,4 +1,4 @@
-package dev.karthikrajan.movies_api;
+package dev.karthikrajan.movies_api.DAO;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
@@ -9,6 +9,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.DocumentReference;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -39,6 +40,8 @@ public class Movie {
     @DocumentReference
     @JsonProperty("reviews")
     private List<Review> reviews;
+
+    private List<String> bookingIds = new ArrayList<>();
 
     private void getReviews(Review review){
         this.reviews= Collections.singletonList(review);
